@@ -1,12 +1,12 @@
-package main
+package products
 
-import "fmt"
+import "fmt" // Precisamos importar fmt aqui para usar fmt.Printf e fmt.Errorf
 
-// products é um slice global (dentro do pacote main) para armazenar todos os produtos.
-// Note que 'Product' é acessível aqui porque ambos os arquivos estão no mesmo pacote 'main'.
+// products é um slice global dentro DO PACOTE products.
 var products []Product
 
 // AddProduct adiciona um novo produto à lista.
+// Funções exportáveis começam com letra maiúscula.
 func AddProduct(id, name string, price float64) {
 	newProduct := Product{
 		ID:    id,

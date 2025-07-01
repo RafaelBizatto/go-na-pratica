@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Produtos (Básico)</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Produtos</h1>
+
+        <section class="add-product">
+            <h2>Adicionar Novo Produto</h2>
+            <form id="addProductForm">
+                <label for="productId">ID do Produto:</label>
+                <input type="text" id="productId" required>
+
+                <label for="productName">Nome do Produto:</label>
+                <input type="text" id="productName" required>
+
+                <label for="productPrice">Preço:</label>
+                <input type="number" id="productPrice" step="0.01" required>
+
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        </section>
+
+        <section class="product-list">
+            <h2>Produtos Cadastrados</h2>
+            <ul id="productsList">
+                </ul>
+            <p id="noProductsMessage" style="display: none;">Nenhum produto cadastrado ainda.</p>
+        </section>
+    </div>
+
+   
+</body>
+</html>
